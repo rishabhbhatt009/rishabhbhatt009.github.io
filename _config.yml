@@ -1,0 +1,378 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Rishabh Bhatt
+description: 'Rishabh Bhatt Resume'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://rishabhbhatt009.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#local
+# url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
+
+logo: 
+  logo: 'img/logo/logo.png'
+  light: 'img/logo/light.png'
+  mobile: 'img/logo/mobile.png'
+favicon:  'img/favicon.ico'
+
+vendor: 
+  name: Rishabh
+  url: ""
+
+html_directionality:  'rtl' # ltl ( default ) "rtl", ltl
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+permalink: /blog/:title:output_ext
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+comments:
+  provider               : false # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : 'rishabh' # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+# google map key
+google_map_key           : 'AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s' # false (default),
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+##
+getform_id: # to go https://getform.io/ and create an account for contact form 
+
+
+##########################################################################
+################# seo ####################################################
+##########################################################################
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+og_image                 : '/images/profile.jpg' # Open Graph/Twitter default site image
+header: 
+  - image                 : '/images/profile.jpg'
+
+###########################################################################
+###########################   Home / hero  ################################
+###########################################################################
+
+first_name: Rishabh
+last_name: Bhatt
+date_of_bath: '1998-Jan-09 00:00'
+email: 'rishabhbhatt@gmail.com'
+phone: '+1 470 529 8821'
+address: 'State College, PA, USA'
+interests: 'Playstation, Reading'
+study: 'Penn State University'
+degree: 'Master'
+cv_download_link: '#'
+user_intro: 'As an experienced developer, I write code that churns raw data into actionable insights & meaningful stories. I have worked with fortune 500 clients across continents & helped them analyze real world data to drive successful business strategies.'
+
+
+freelance_hire: true
+professions: 
+  - data scientist
+  - software developer
+  - web developer
+  - freelancer
+  - photographer
+author_description: "<strong>Hello, I’m a Rishabh</strong>, data-scientist based out of State-College. <br> I have rich experience in web site design &amp; building <br> and customization. Also I am good at <strong>html, css, <br> jekyll, php, jquery, bootstrap.</strong>"
+social_link:
+  - name: facebook
+    icon: "xcon-facebook"
+    link: "#"
+  - name: twitter 
+    icon: "xcon-twitter"
+    link: "#"
+
+  - name: linkedin 
+    icon: "xcon-linkedin"
+    link: "#"
+  - name: instagram 
+    icon: "xcon-instagram"
+    link: "#"
+  - name: behance 
+    icon: "xcon-behance"
+    link: "#"
+
+
+#############################################
+######### Our Services ######################
+#############################################
+our_services_title: 'Services'
+our_services_tagline: 'What I Do'
+
+our_services:
+  - name: "Web Development"
+    image: "img/svg/source.svg"
+    description: "Web design is a similar process of creation, with the intention of presenting.."
+
+  - name: 'Brand Identity'
+    image: 'img/svg/line-chart.svg'
+    description: 'Web design is a similar process of creation, with the intention of presenting...'
+  
+  - name: 'Creative Design'
+    image: 'img/svg/light-bulb.svg'
+    description: 'Web design is a similar process of creation, with the intention of presenting...'
+  
+  - name: 'Adobe Illustrator'
+    image: 'img/svg/adobe-illustrator.svg'
+    description: 'Web design is a similar process of creation, with the intention of presenting...'
+  
+  - name: 'Adobe Photoshop'
+    image: 'img/svg/adobe-photoshop.svg'
+    description: 'Web design is a similar process of creation, with the intention of presenting...'
+  
+  - name: 'Social Media'
+    image: 'img/svg/twitter-1.svg'
+    description: 'Web design is a similar process of creation, with the intention of presenting...'
+
+##################################################################
+################  professional_skills ############################
+##################################################################
+professional_skill_title: 'In a <span>short time</span>, I have been able to achieve excellence in all areas of app and web development.'
+professional_skill_description: 'I provide cost-effective and high quality products to meet our Clients’ needs of timely delivery World Wide. I want to be local in a global world to be where our Customers need our services customers need our services.'
+
+professional_skills:
+  - name: 'jekyll'
+    percentage: '90'
+  
+  - name: 'PHP / MYSQL'
+    percentage: '65'
+  
+  - name: 'HTML / CSS / JS'
+    percentage: '95'
+  
+  - name: 'Photoshop'
+    percentage: '85'
+
+##########################################
+################ portfolios ##############
+#########################################
+portfolio_title: 'Creative Works'
+portfolio_tagline: 'Portfolios'
+portfolio_categories: ['video', 'animation', 'image']
+
+portfolios: 
+  - main_image: 'img/portfolio/1.jpg'
+    title: 'Popup Video'
+    type: 'video'
+    category: 'video'
+    video_link: 'https://www.youtube.com/watch?v=ICr_bOuM9Zo'
+
+  - main_image: 'img/portfolio/2.jpg'
+    title: 'Popup Image'
+    type: 'image'
+    category: 'image'
+    video_link: 
+
+  - main_image: 'img/portfolio/8.webp'
+    title: 'Animate Image'
+    type: 'animation'
+    category: 'animation'
+    video_link: 
+
+
+  - main_image: 'img/portfolio/4.jpg'
+    title: 'Popup Image'
+    type: 'image'
+    category: 'image'
+    video_link: 
+
+  - main_image: 'img/portfolio/5.jpg'
+    title: 'Popup Image'
+    type: 'image'
+    category: 'image'
+    video_link: 
+
+  - main_image: 'img/portfolio/6.jpg'
+    title: 'Popup Image'
+    type: 'image'
+    category: 'image'
+    video_link: 
+
+############################################
+############## testimonial #################
+############################################
+testimonials:
+  - quote: 'We were looking for a logo with a touch of modernism. Arlo grasped our needs and produced a stunning design. Awesome to work with Arlo. Incredibly organized, easy to communicate with, responsive with next iterations.'
+    author_name: 'Steve Collins'
+    author_image: '/img/about/2.jpg'
+    author_profession: 'Photographer'
+  
+#############################################
+############ EXPERIENCE #####################
+#############################################
+experience_title: 'Experience'
+experience_tagline: 'Working Process'
+experience_description: ''
+
+educations:
+  - year: '2009 - 2013'
+    title: 'University of Chicago'
+    description: 'Independent study is a form of education offered by many high schools, colleges, and other educational institutions. It is sometimes referred to as directed study.'
+  - year: '2006 - 2009'
+    title: 'Christofer College'
+    description: 'Independent study is a form of education offered by many high schools, colleges, and other educational institutions. It is sometimes referred to as directed study.'
+  - year: '1996 - 2006'
+    title: 'Secondary School'
+    description: 'Independent study is a form of education offered by many high schools, colleges, and other educational institutions. It is sometimes referred to as directed study.'
+
+experiences:
+  - year: '2018 - Current'
+    title: 'Web Developer'
+    description: 'Web development refers to building, creating, and an maintaining websites. It includes aspects such as web design, web programming, and database management.'
+  - year: '2015 - 2018'
+    title: 'App Developer'
+    description: 'Web development refers to building, creating, and an maintaining websites. It includes aspects such as web design, web programming, and database management.'
+  - year: '2013 - 2015'
+    title: 'Ui/Ux Designer'
+    description: 'Web development refers to building, creating, and an maintaining websites. It includes aspects such as web design, web programming, and database management.'
+
+  
+#################################
+####### Pricing Tables ##########
+#################################
+pricing_title: 'PRICING'
+pricing_tagline: 'CHOOSE PLAN'
+
+pricing_table:
+  - name: "Small"
+    icon: "img/svg/icon.svg"
+    price: "300"
+    lines: >-
+        <li><p>Web Development</p></li>
+        <li><p>Creative Design</p></li>
+        <li><p>Photography</p></li>
+    url: "#"
+
+  - name: "Medium"
+    icon: "img/svg/small-rocket-ship-silhouette.svg"
+    price: "500"
+    lines: >-
+        <li><p>Web Development</p></li>
+        <li><p>Creative Design</p></li>
+        <li><p>Photography</p></li>
+    url: "#"
+
+  - name: "Professional"
+    icon: "img/svg/fire.svg"
+    price: "999"
+    lines: >-
+        <li><p>Web Development</p></li>
+        <li><p>Creative Design</p></li>
+        <li><p>Photography</p></li>
+    url: "#"
+
+########### Fun Facts ###############
+fun_facts:
+  - name: "47 Albumes Listened"
+    icon: "la la-headphones"
+  - name: "15 Awards Won"
+    icon: "la la-trophy"
+  - name: "54 Projects Completed"
+    icon: "la la-lightbulb-o"
+  - name: "10 Countries Visited"
+    icon: "la la-flag-o"
+  - name: "50+ Books Readed"
+    icon: "la la-book"
+  - name: "100 000 Lines of Code"
+    icon: "la la-code"
+  - name: "49 Satisfied Customers"
+    icon: "la la-smile-o"
+  - name: "1250 km Cycled"
+    icon: "la la-bicycle"
+
+  
+
+############ Clients ##########
+# clients:
+#   - image: "images/clients/client_1.png"
+#     name: ""
+#     url: "#"
+#   - image: "images/clients/client_2.png"
+#     name: ""
+#     url: "#"
+#   - image: "images/clients/client_3.png"
+#     name: ""
+#     url: "#"
+#   - image: "images/clients/client_4.png"
+#     name: ""
+#     url: "#"
+#   - image: "images/clients/client_1.png"
+#     name: ""
+#     url: "#"
+#   - image: "images/clients/client_2.png"
+#     name: ""
+#     url: "#"
+#   - image: "images/clients/client_3.png"
+#     name: ""
+#     url: "#"
+#   - image: "images/clients/client_4.png"
+#     name: ""
+#     url: "#"
+  
