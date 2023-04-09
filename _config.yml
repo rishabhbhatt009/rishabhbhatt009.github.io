@@ -1,8 +1,9 @@
 # Site settings
 title: Rishabh-Bhatt-Portfolio
 description: A portfolio website for Rishabh-Bhatt-Portfolio
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# baseurl: "rishabh"
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://rishabhbhatt009.github.io"
 
 # User settings
 username: Rishabh Bhatt
