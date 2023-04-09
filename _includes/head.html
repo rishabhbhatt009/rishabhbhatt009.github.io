@@ -1,18 +1,10 @@
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
-	<!-- STYLES -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,700,700i,800&display=swap" rel="stylesheet">
-	
-	<link rel="stylesheet" type="text/css" href="{{ 'css/main.css' | relative_url }}" />
-	<link rel="stylesheet" type="text/css" href="{{ 'css/plugins.css' | absolute_url }}" />
-	<link rel="stylesheet" type="text/css" href="{{ 'css/stylem.css' | absolute_url }}" />
-	<!--[if lt IE 9]> 
-		<script type="text/javascript" src="{{ 'js/modernizr.custom.js' | absolute_url }}"></script> 
-	<![endif]-->
-	<!-- /STYLES -->
-	{%- include seo.html -%}
+<head>  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 </head>
-	

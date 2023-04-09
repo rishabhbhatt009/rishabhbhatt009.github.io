@@ -1,16 +1,7 @@
-<div class="arlo_tm_footer">
-    <div class="container">
-        <div class="footer_inner">
-            <div class="copy">
-                <p>Copyright &copy; 
-                    {{ site.time | date: "%Y" | minus: 1}} - 
-                    {{ site.time | date: "%Y" }}. Template has been Develop by 
-                    <a href="{{ site.vendor.url }}" target="_blank">{{ site.vendor.name }}</a>
-                </p>
-            </div>
-            <div class="top">
-                <a class="arlo_tm_totop" href="#"></a> 
-            </div>
-        </div>
-    </div>
-</div>
+<footer class="footer">
+    <p>&copy; {{site.username}}</p>
+</footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+{% include google-analytics.html %}
